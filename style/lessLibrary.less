@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+body, ul, li {
+	.mp();
+}
+
+ul {
+	list-style: none;
+}
+
+.mp() {
+	margin: 0;
+	padding: 0;
+}
+
+.fl() {
+	float: left;
+}
+
+.fr() {
+	float: right;
+}
+
+.pr() {
+	position: relative;
+}
+
+.pa() {
+	position: absolute;
+}
+
+.textA(@direction: center) {
+	text-align: @direction;
+}
+
+.verticalA(@position) {
+	vertical-align: @position;
+}
+
+.lineH(@h) {
+	line-height: @h;
+}
+
+.fontS(@size) {
+	font-size: @size;
+}
+
+.fontF(@family) {
+	font-family: @family;
+}

@@ -1,0 +1,49 @@
+@charset "utf-8";
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+.banner {
+  margin: 0 auto;
+  width: 780px;
+  height: 285px;
+  position: relative;
+}
+.banner img {
+  float: left;
+  display: none;
+}
+.banner img.active {
+  display: block;
+}
+.banner .arrow {
+  position: absolute;
+  width: 780px;
+  height: 285px;
+  z-index: 1;
+}
+.banner .arrow div {
+  width: 100px;
+  height: 285px;
+  text-align: center;
+  line-height: 285px;
+  font-size: 50px;
+}
+.banner .arrow div:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}
+.banner .arrow div:active {
+  background: rgba(0, 0, 0, 0.5);
+}
+.banner .arrow .left {
+  float: left;
+}
+.banner .arrow .right {
+  float: right;
+}

@@ -1,0 +1,47 @@
+@charset "utf-8";
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+.banner {
+  width: 780px;
+  height: 285px;
+  position: relative;
+}
+.banner img {
+  float: left;
+  display: none;
+}
+.banner img.active {
+  display: block;
+}
+.banner .mark {
+  position: absolute;
+  left: 340px;
+  bottom: 50px;
+  z-index: 1;
+}
+.banner .mark div {
+  position: relative;
+}
+.banner span {
+  float: left;
+  width: 25px;
+  height: 7px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
+}
+.banner span:hover {
+  cursor: pointer;
+}
+.banner span.active {
+  position: relative;
+  top: -1px;
+  background-color: transparent;
+  border: 1px solid #000;
+}

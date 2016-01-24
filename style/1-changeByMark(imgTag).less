@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+@import url(lessLibrary.less);
+
+@width: 780px;
+@height: 285px;
+
+.banner {
+	width: @width;
+	height: @height;
+	.pr();
+
+	img {
+		float: left;
+		display: none;
+
+		&.active {
+			display: block;
+		}
+	}
+
+	.mark {
+		.pa();
+		left: 340px;
+		bottom: 50px;
+		z-index: 1;
+
+		div {
+			.pr();
+		}
+	}
+
+	span {
+		float: left;
+		width: 25px;
+		height: 7px;
+		background-color: rgba(0,0,0,.5);
+		margin-right: 10px;
+		&:hover {
+			cursor: pointer;
+		}
+
+		&.active {
+			.pr();
+			top: -1px;
+			background-color: transparent;
+			border: 1px solid #000;
+		}
+	}
+}

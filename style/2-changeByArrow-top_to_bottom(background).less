@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+@import url(lessLibrary.less);
+
+@width: 780px;
+@height: 285px;
+
+.banner {
+	width: @width;
+	height: @height;
+	.pr();
+
+	li {
+		width: @width;
+		height: @height;
+		display: none;
+		.fl();
+
+		&.active {
+			display: block;
+		}
+
+		&:nth-child(1) {
+			background: url(../image/s1.jpg);
+		}
+
+		&:nth-child(2) {
+			background: url(../image/s2.jpg);
+		}
+
+		&:nth-child(3) {
+			background: url(../image/s3.jpg);
+		}
+	}
+
+	.arrow {
+		width: @width;
+		height: @height;
+
+		div {
+			width: @width;
+			height: 50px;
+			.lineH(50px);
+			.textA();
+			.fontS(30px);
+
+			&:hover {
+				background: rgba(0,0,0,.3);
+				cursor: pointer;
+			}
+
+			&:active {
+				background: rgba(0,0,0,.5);
+			}
+		}
+
+		.top {
+			.pa();
+			top: 0;
+			left: 0;
+		}
+
+		.bottom {
+			.pa();
+			bottom: 0;
+			left: 0;
+		}
+	}
+}

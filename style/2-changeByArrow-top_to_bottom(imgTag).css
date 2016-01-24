@@ -1,0 +1,50 @@
+@charset "utf-8";
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+.banner {
+  width: 780px;
+  height: 285px;
+  position: relative;
+}
+.banner img {
+  display: none;
+  float: left;
+}
+.banner img.active {
+  display: block;
+}
+.banner .arrow {
+  width: 780px;
+  height: 285px;
+}
+.banner .arrow div {
+  width: 780px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+.banner .arrow div:hover {
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.banner .arrow div:active {
+  background: rgba(0, 0, 0, 0.5);
+}
+.banner .arrow .top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.banner .arrow .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
